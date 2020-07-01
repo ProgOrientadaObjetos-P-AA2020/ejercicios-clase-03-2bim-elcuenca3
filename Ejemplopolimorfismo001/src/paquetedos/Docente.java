@@ -21,7 +21,7 @@ public abstract class Docente {
         return nombre;
     }
     
-    public abstract void obtenerSueldo(double d){
+    public  void obtenerSueldo(double d){
         sueldo = d;
     }
 }

@@ -1,14 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package paquetesiete;
 
-/**
- *
- * @author reroes
- */
-public class Rombo {
-    
+public class Rombo extends Figura {
+
+    public Rombo(double b, double a) {
+        super(b, a);
+    }
+
+    @Override
+    public void calcular_area() {
+        area = (base * altura) / 2;
+    }
+
+    @Override
+    public String toString() {
+   
+        String cadena = String.format("Area del Rombo: %s\n",
+                 obtenerArea());
+        return cadena;
+    }
+
 }
